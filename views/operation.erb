@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Operation</title>
+  </head>
+  <body>
+    <p>
+    <% @operation = params[:operation] %>
+    <% @num1 = params[:number1].to-i %>
+    <% @num2 = params[:number2].to_i %>
+    <% if @operation == "add" %>
+      "#{@num1}+ #{@num2}"
+    <%end%>
+    </p>
+  </body>
+</html>
