@@ -4,14 +4,14 @@ class App < Sinatra::Base
 
   get '/reversename/:name' do
     @name = params[:name]
-    @backwards = @name.reverse 
+    @backwards = @name.reverse
     "#{@backwards}"
   end
 
-  get '/square/:number' do 
-    @num = params[:number]
-    @square = @num * @num 
+  get '/square/:number' do
+    @num = params[:number].to_i
+    @square = @num * @num
     "#{@square}"
-  end 
+  end
 
 end
