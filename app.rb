@@ -33,10 +33,10 @@ class App < Sinatra::Base
     add, subtract, multiply or divide
     @operation = params[:operation]
     @num1 = params[:number1].to-i
-    @num2 = params[:number2].to_i 
+    @num2 = params[:number2].to_i
     if @operation == "add"
-      @num1 + @num2 
-    end 
+      "#{@num1}+ #{@num2}"
+    end
   end
 
 end
